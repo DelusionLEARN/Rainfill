@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1553774081987" analysisTimestamp="1553774076936" release="">
+  <Project projectName="Rain">
+    <Jar>E:\&#19987;&#19994;&#35838;\&#22823;&#19977;\&#36719;&#20214;&#36136;&#37327;&#19982;&#27979;&#35797;\&#23454;&#39564;\Rain\bin</Jar>
+    <AuxClasspathEntry>E:\&#19987;&#19994;&#35838;\&#22823;&#19977;\&#36719;&#20214;&#36136;&#37327;&#19982;&#27979;&#35797;\&#23454;&#39564;\Rain\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_131\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>E:\&#19987;&#19994;&#35838;\&#22823;&#19977;\&#36719;&#20214;&#36136;&#37327;&#19982;&#27979;&#35797;\&#23454;&#39564;\Rain\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="rain.rainfill">
+      <SourceLine classname="rain.rainfill" start="17" end="113" sourcefile="rainfill.java" sourcepath="rain/rainfill.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="rain.rainfill$KeyPressListener">
+      <SourceLine classname="rain.rainfill$KeyPressListener" sourcefile="rainfill.java" sourcepath="rain/rainfill.java"/>
+    </Class>
+    <Method classname="rain.rainfill$KeyPressListener" name="keyPressed" signature="(Ljava/awt/event/KeyEvent;)V" isStatic="false">
+      <SourceLine classname="rain.rainfill$KeyPressListener" start="106" end="108" startBytecode="0" endBytecode="82" sourcefile="rainfill.java" sourcepath="rain/rainfill.java"/>
+    </Method>
+    <SourceLine classname="rain.rainfill$KeyPressListener" start="107" end="107" startBytecode="10" endBytecode="10" sourcefile="rainfill.java" sourcepath="rain/rainfill.java"/>
+    <SourceLine classname="rain.rainfill$KeyPressListener" start="107" end="107" startBytecode="10" endBytecode="10" sourcefile="rainfill.java" sourcepath="rain/rainfill.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="rain.rainfill$KeyPressListener">
+      <SourceLine classname="rain.rainfill$KeyPressListener" start="103" end="108" sourcefile="rainfill.java" sourcepath="rain/rainfill.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 28 Mar 2019 19:48:06 +0800" total_classes="3" referenced_classes="330" total_bugs="3" total_size="87" num_packages="1" java_version="1.8.0_131" vm_version="25.131-b11" cpu_seconds="17.36" clock_seconds="5.08" peak_mbytes="421.34" alloc_mbytes="1024.00" gc_seconds="0.26" priority_2="3">
+    <PackageStats package="rain" total_bugs="3" total_types="3" total_size="87" priority_2="3">
+      <ClassStats class="rain.rainfill" sourceFile="rainfill.java" interface="false" size="51" bugs="1" priority_2="1"/>
+      <ClassStats class="rain.rainfill$GraphicsPanel" sourceFile="rainfill.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="rain.rainfill$KeyPressListener" sourceFile="rainfill.java" interface="false" size="9" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="974" invocations="1549" avgMicrosecondsPerInvocation="629" maxMicrosecondsPerInvocation="56656" standardDeviationMircosecondsPerInvocation="2857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="596" invocations="330" avgMicrosecondsPerInvocation="1807" maxMicrosecondsPerInvocation="64249" standardDeviationMircosecondsPerInvocation="4620"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="569" invocations="2" avgMicrosecondsPerInvocation="284561" maxMicrosecondsPerInvocation="297109" standardDeviationMircosecondsPerInvocation="12548"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="562" invocations="330" avgMicrosecondsPerInvocation="1705" maxMicrosecondsPerInvocation="23185" standardDeviationMircosecondsPerInvocation="3070"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="377" invocations="741" avgMicrosecondsPerInvocation="509" maxMicrosecondsPerInvocation="30332" standardDeviationMircosecondsPerInvocation="1217"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="209" invocations="1552" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="2023" standardDeviationMircosecondsPerInvocation="81"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="152" invocations="330" avgMicrosecondsPerInvocation="461" maxMicrosecondsPerInvocation="7546" standardDeviationMircosecondsPerInvocation="838"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="129" invocations="1502" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="47326" standardDeviationMircosecondsPerInvocation="1225"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="116" invocations="330" avgMicrosecondsPerInvocation="352" maxMicrosecondsPerInvocation="17276" standardDeviationMircosecondsPerInvocation="1882"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="109" invocations="330" avgMicrosecondsPerInvocation="330" maxMicrosecondsPerInvocation="17142" standardDeviationMircosecondsPerInvocation="1023"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1553774081983" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
